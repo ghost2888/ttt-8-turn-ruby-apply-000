@@ -19,7 +19,7 @@ def position_taken?(board, input)
 end
 
 def valid_move?(board, input)
- position_taken?(board, input) != true && input.between?(0,8)
+ input.between?(0,8) && position_taken?(board, input) != true 
 end 
 
 def move(board, input, player = "X")
